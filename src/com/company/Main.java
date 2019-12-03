@@ -15,10 +15,15 @@ public class Main {
         System.out.println("Enter the elements of the arraylist...");
             for (int i = 0; i < length; i++) {
                 int value = in.nextInt();
-                myArrayList.set(i, value);
+                myArrayList.add(i,value);
             }
 
-            function(myArrayList);
+            myArrayList = function(myArrayList);
+
+        for(int i =0 ; i<myArrayList.size()-1;i++){
+            System.out.printf("%s%d%s%d%s\n","{",myArrayList.get(i),",",myArrayList.get(i+1),"}");
+        }
+
 
 
 
