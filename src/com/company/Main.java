@@ -20,7 +20,7 @@ public class Main {
 
             myArrayList = function(myArrayList);
 
-        for(int i =0 ; i<myArrayList.size()-1;i++){
+        for(int i =0 ; i<myArrayList.size()-1;i+=2){
             System.out.printf("%s%d%s%d%s\n","{",myArrayList.get(i),",",myArrayList.get(i+1),"}");
         }
 
